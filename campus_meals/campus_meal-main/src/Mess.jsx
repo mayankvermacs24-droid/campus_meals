@@ -16,7 +16,14 @@ function Mess({ onNavigate, className = "" }) {
                             <li>Instant meal verification</li>
                             <li>Track meal history</li>
                         </ul>
-                        <button className="btn btn-primary btn-full-width" onClick={() => onNavigate && onNavigate('student-dashboard')}>View Menu</button>
+                        <a
+                                href="/messmenu.jpg"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-primary"
+                            >
+                                📄 View Mess Menu
+                            </a>
                     </div>
                     <div className="mess-card">
                         <h3>📅 For Non-Hostelites</h3>
@@ -30,20 +37,8 @@ function Mess({ onNavigate, className = "" }) {
                         <button className="btn btn-primary btn-disabled btn-full-width" onClick={() => onNavigate && onNavigate('student-dashboard')}>Booking Closed</button>
                     </div>
                 </div>
-                <div className="menu-display">
-                    <h2 className="section-title">Today's Menu</h2>
-                    <div className="menu-tabs">
-                        <button className="menu-tab active">All</button>
-                        <button className="menu-tab">Breakfast</button>
-                        <button className="menu-tab">Lunch</button>
-                        <button className="menu-tab">Snacks</button>
-                        <button className="menu-tab">Dinner</button>
-                    </div>
-                    <div className="menu-content">
-                        <h3>No Menu Available</h3>
-                        <p className="content-message">Menu will be available soon. Please check back later.</p>
-                    </div>
-                </div>
+                
+                
             </div>
         </section>
     );

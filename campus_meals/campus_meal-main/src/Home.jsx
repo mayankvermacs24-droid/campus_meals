@@ -1,7 +1,7 @@
 // FILENAME: src/Home.jsx
 
 import React from 'react';
-import { Link } from 'react-router-dom'; // Make sure Link is imported
+import { Link } from 'react-router-dom';
 
 function Home({ className = "" }) {
     return (
@@ -38,14 +38,10 @@ function Home({ className = "" }) {
                         </Link>
                     </div>
                 </div>
-                <div className="cta-section">
-                    <h2>Get Started Today</h2>
-                    <p>Join your campus dining platform</p>
-                    <Link to="/signup" className="btn btn-primary">Create Account</Link>
-                </div>
+                
             </div>
         </section>
     );
 }
 
-export default Home; // Make sure this line is at the bottom
+export default Home; 

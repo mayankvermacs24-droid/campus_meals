@@ -20,7 +20,14 @@ function StudentDashboard() {
             case 'profile':
                 return <div><h3>Your Profile 👤</h3><p>Manage your personal and account details here.</p></div>;
             case 'mess_booking':
-                return <div><h3>Mess Booking 🍽️</h3><p>Book your daily meals and view your meal history.</p></div>;
+                return <div><h3>Mess Booking 🍽️</h3><p>Book your daily meals and view your meal history.</p>
+               <button className="btn btn-secondary">
+                    <h3>Generate QR</h3>
+                </button>
+
+               </div>
+               
+                ;
             case 'canteen_orders':
                 return <div><h3>Canteen Orders 🛒</h3><p>View your past canteen orders and receipts.</p></div>;
             case 'wallet':
@@ -64,11 +71,7 @@ function StudentDashboard() {
                         </li>
                     </ul>
                 </nav>
-                <div className="sidebar-footer">
-                    <button onClick={handleLogout} className="btn btn-secondary btn-full-width">
-                        Logout
-                    </button>
-                </div>
+               
             </div>
             <div className="main-content">
                 <div className="content-area">

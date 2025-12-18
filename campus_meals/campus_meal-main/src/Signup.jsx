@@ -64,23 +64,13 @@ function Signup() {
         <section id="signup">
             <div className="auth-container">
                 <form className="auth-form" onSubmit={handleSubmit}>
-                    <div className="auth-icon">🧑‍🎓</div>
+                   
                     <h2>Create Account</h2>
                     <p>Join your campus dining platform</p>
                     
                     {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
-
                     <div className="form-group">
-                        <label htmlFor="role">I am a</label>
-                        <select id="role" value={role} onChange={(e) => setRole(e.target.value)}>
-                            <option value="student">Student</option>
-                            <option value="staff">Staff</option>
-                            <option value="admin">Admin</option>
-                        </select>
-                    </div>
-
-                    <div className="form-group">
-                        <label htmlFor="usn">USN / Staff ID</label>
+                        <label htmlFor="usn">USN</label>
                         <input type="text" id="usn" value={usn} onChange={(e) => setUsn(e.target.value)} required />
                     </div>
 
